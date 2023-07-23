@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <h1>{{heading}}</h1>
+      <div class="counter">
+        <button id="increment-btn" v-on:click="increment">+</button>
+        <div id="counter-value">{{counter}}</div>
+        <button id="decrement-btn" v-on:click="decrement">-</button>
+      </div>
+      <button id="reset" v-on:click="reset">Reset</button>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
